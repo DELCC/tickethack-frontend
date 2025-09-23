@@ -10,15 +10,15 @@
     <div class="header">
         <div class = "logo">Tickethack</div>
         <div class = "navigation">
-            <div class = "cartButton">CART</div>
-            <div class = "purchaseButton">BOOKINGS</div>
+            <div class = "cartButton">Cart</div>
+            <div class = "purchaseButton">Bookings</div>
         </div>
     </div>
     <div id="main">
         <div id="title_main"> Explore the wolrd effortlessly by train !</div>
         <div id="subtitle_main">Compare, book and enjoy cheap prices for train tickets: your journey starts on Tickethack.</div>
         <div class="cards_main">
-            <div id="card">
+            <div class="card-left">
                 <div class="journeyInfos">
                     <input id="departureInput" type ="text" placeholder="Departure"/>
                     <input id="arrivalInput" type ="text" placeholder="Arrival"/>   
@@ -28,9 +28,17 @@
                 <button id="addCity">SEARCH</button>
 
             </div>
-            <div id="card">
+            <div id="card" class="card-right">
                 <img src="./images/train.png" alt="image de train" />
+                <span id="underscore">_______________________</span>
                 <p> It's time to book your future trip.</p>
+                <!-- <div id="newJourney">
+                    <div id="newJourneyDeparture">LYON</div>
+                    <div>></div>
+                    <div id="newJourneyArrival">PARIS</div>
+                    <div id="newJourneyTime">6:30</div>
+                    <div><button id="bookButton">BOOK</button></div>
+                </div> -->
             </div>
         </div>
     
