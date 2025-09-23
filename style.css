@@ -84,7 +84,7 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	width: 400px;
-    height : 700px;
+    height : 500px;
 	margin: 30px;
 	background-color: white;
 	background-size: cover;
@@ -98,7 +98,7 @@ body{
 	justify-content: space-around;
 	align-items: center;
 	width: 400px;
-    height : 700px;
+    height : 500px;
 	margin: 30px;
 	background-color: white;
 	background-size: cover;
@@ -118,7 +118,7 @@ body{
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: grey;
+    background-color: rgba(128, 128, 128, 0.269);
     border-radius: 5px;
     padding: 5px;
     margin: 5px;
@@ -131,4 +131,14 @@ body{
 #underscore{
  color: rgb(53, 196, 131);
  font-size: 20px;
+}
+
+.bookButton{
+    background-color:rgb(53, 196, 131);
+    color: white;
+    border-radius: 8px;
+    border : none;
+    padding: 8px;
+    
+    
 }

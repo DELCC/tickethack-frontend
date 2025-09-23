@@ -20,16 +20,15 @@ document.querySelector("#addCity").addEventListener('click', function(){
             
         } else {
         for (const journey of data.trips){
-            // console.log(journey["_id"])
-            let heure = journey["date"].substr(11, 5)
-            console.log(heure)
+            console.log(journey["_id"])
+
             document.querySelector("#card").innerHTML+=`<div id="newJourney">
                     <div id="newJourneyDeparture">${journey["departure"]}</div>
                     <div>></div>
                     <div id="newJourneyArrival">${journey["arrival"]}</div>
-                    <div id="newJourneyTime">${heure}</div>
+                    <div id="newJourneyTime">${journey["date"]}</div>
                     <div id="newJourneyPrice">${journey["price"]}€</div>
-                    <button class="bookButton" id="${journey["_id"]}">BOOK</button>
+                    <button class="bookButton" id="${journey["_id"]}">Book</button>
                 </div>`
         }}
     })
