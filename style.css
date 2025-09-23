@@ -7,27 +7,30 @@ body{
     display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 8vh;
+	height: auto;
     width: 100vw;
     margin: 0;
 	/* padding: 25px 30px 25px 30px; */
 	background-color: white;
-    padding-left: 10px;
-    padding-right: 100px;
+    padding: 1%;
 }
 .logo{
     font-size: 25px;
     color: rgb(53, 196, 131);
+    font-weight: bold;
+    margin-left: 2%;
 }
 
 .navigation{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
+    gap : 100%;
     flex-direction: row;
     align-items: center; 
-    width :10vw;  
+    width :auto;  
     font-size: 15px;
-    color: black
+    color: black;
+    margin-right: 5%;
 }
 /* .cartButton{
     margin-right: 10px;
@@ -48,17 +51,16 @@ body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    gap : 20px;
 }
 
 #title_main{
-    border: #225A86 solid;
     width : 100%;
     text-align: center;
     font-size: 70px;
     color : white;
 }
 #subtitle_main{
-    border: #488622 solid;
     width : 100%;
     text-align: center;
     font-size: 40px;
@@ -66,7 +68,6 @@ body{
 }
 
 .cards_main{
-    border: #862260 solid;
     width : 100%;
     height: 100%;
     text-align: center;
@@ -74,17 +75,18 @@ body{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap : 100px; 
 }
 
 .card-right{
     padding: 15px;
-    border : black solid;
+    border : none;
     display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	width: 400px;
-    height : 500px;
+	width: 250px;
+    height : 300px;
 	margin: 30px;
 	background-color: white;
 	background-size: cover;
@@ -92,13 +94,13 @@ body{
 }
 .card-left{
     padding: 15px;
-    border : black solid;
+    border : none;
     display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
-	width: 400px;
-    height : 500px;
+	width: 250px;
+    height : 300px;
 	margin: 30px;
 	background-color: white;
 	background-size: cover;
@@ -106,10 +108,11 @@ body{
 }
 
 .journeyInfos{
-    border : black solid;
+    width: 100%;
     display: flex;
 	flex-direction: column;
-	justify-content: space-between;
+	justify-content: center;
+    align-items: center;
 }
 
 #newJourney{
@@ -124,10 +127,6 @@ body{
     margin: 5px;
 }
 
-#card{
-    overflow: scroll;
-}
-
 #underscore{
  color: rgb(53, 196, 131);
  font-size: 20px;
@@ -139,6 +138,35 @@ body{
     border-radius: 8px;
     border : none;
     padding: 8px;
-    
-    
+}
+
+button{
+    cursor: pointer;
+}
+
+#addCity{
+    width:100%;
+    background-color:rgb(53, 196, 131);
+    color: white;
+    border-radius: 8px;
+    border : none;
+    padding: 8px;
+}
+
+input{
+    width: 100%;
+    outline: none;
+    border : none;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.269);
+    padding: 8px;
+    height: 25px;
+}
+#arrivalInput{
+    border-top: solid grey;
+}
+
+img{
+    width: 50%;
+    height: auto;
 }
