@@ -23,6 +23,7 @@ fetch('http://localhost:3000/reservations/isBooked')
             document.querySelector("#cardCart").innerHTML=`<div> No Ticket in your cart.</div>
             <div>Why not plan a trip</div>`;
         } else {
+            document.querySelector('#cardCart').style.justifyContent = "space-between";
             document.querySelector("#cardCart").innerHTML+='<div id="newScheduleListCart"></div>'
             
             for (const schedule of data.reservations){

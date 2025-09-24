@@ -7,9 +7,10 @@ fetch('http://localhost:3000/reservations/isPurchased')
             <div>Why not plan a trip</div>`;
         } else {
             document.querySelector("#cardPurchase").innerHTML+=`
-            <div id="newScheduleListPurchase">
-                <div id = "titlePurchase"> My bookings
+             <div id = "titlePurchase"> My bookings
                 </div>
+            <div id="newScheduleListPurchase">
+               
             </div>`
 
             for (const schedule of data.purchased){
@@ -27,5 +28,11 @@ fetch('http://localhost:3000/reservations/isPurchased')
                 </div>`
             
             }
+            document.querySelector("#cardPurchase").innerHTML+=`
+            <div id="enjoyMessage">
+                <span id="underscore-1">_______________________</span>
+                 <p style="color :  rgb(53, 196, 131) "> Enjoy your trip with Tickethack</p>
+            </div>
+            `
         }
 })

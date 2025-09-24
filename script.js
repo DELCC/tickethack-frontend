@@ -1,4 +1,4 @@
-console.log("hello")
+document.querySelector('#date').value = new Date();
 
 document.querySelector("#addCity").addEventListener('click', function(){
     console.log("well cliqued")
@@ -20,18 +20,21 @@ document.querySelector("#addCity").addEventListener('click', function(){
             <p> No trip found.</p>`
             
         } else {
-        //Affichage des schedules    
+        //Affichage des schedules 
+        document.querySelector('#card').innerHTML +=`<div id="newJourneyList">  </div> `;   
             for (const journey of data.trips){
-                console.log(journey["_id"])
-                document.querySelector(".card-right").style.overflow="scroll";
-                document.querySelector("#card").innerHTML+=`<div id="newJourney">
+                console.log(journey["_id"]);
+                document.querySelector("#newJourneyList").innerHTML+=`
+                    <div id="newJourney">
                         <div id="newJourneyDeparture">${journey["departure"]}</div>
                         <div>></div>
                         <div id="newJourneyArrival">${journey["arrival"]}</div>
                         <div id="newJourneyTime">${journey["date"]}</div>
                         <div id="newJourneyPrice">${journey["price"]}€</div>
                         <a href="./cart.html"><button class="bookButton" id="${journey["_id"]}">Book</button></a>
-                    </div>`
+                    </div>
+                 
+                `;
             }
 
     }
