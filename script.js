@@ -30,18 +30,34 @@ document.querySelector("#addCity").addEventListener('click', function(){
                         <div id="newJourneyArrival">${journey["arrival"]}</div>
                         <div id="newJourneyTime">${journey["date"]}</div>
                         <div id="newJourneyPrice">${journey["price"]}€</div>
-                        <button class="bookButton" id="${journey["_id"]}">Book</button>
+                        <a href="./cart.html"><button class="bookButton" id="${journey["_id"]}">Book</button></a>
                     </div>`
             }
-            //Attention, revoir le bloc demain et tester quand le back sera back
-            const cardRight = document.querySelector('.card-right')
-            if (cardRight.scrollHeight > cardRight.clientHeight) {
-                cardRight.style.overflowY = 'scroll'; 
-                } else {
-                    cardRight.style.overflowY = 'hidden'; 
-                }
-
 
     }
     })
+    .then(()=>{
+        let arrayButton = document.querySelectorAll(".bookButton")
+        for (const button of arrayButton){
+            console.log(button.id)
+            button.addEventListener("click", function(){
+                console.log("click")
+                fetch(`http://localhost:3000/reservations/${button.id}`, {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                })
+                .then(response => response.json())
+                .then((data)=>{
+                    console.log(data)
+                })
+            })
+            
+        }
+
+//         document.querySelector(".bookButton").addEventListener('click', function(){
+//         console.log("well")
+//     // console.log()
+// })
+    })
 })
+
