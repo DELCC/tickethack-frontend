@@ -257,7 +257,7 @@ img{
 }
 
 
-.purchaseButtonCart{
+#purchaseButtonCart{
     background-color:rgb(53, 196, 131);
     color: white;
     border-radius: 2px;
@@ -267,3 +267,58 @@ img{
 #totalCart{
     color: white;
 }
+
+/*CSS du Purchase*/
+
+#bodyPurchase{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width : 100vw;
+    height: 100vh;
+    background-color: rgb(241, 241, 241);
+}
+
+#cardPurchase{
+    border: solid black;
+    background-color: white;
+    border-radius: 8px;;
+    height: 30%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#newScheduleListPurchase{
+    width:100%;
+    display : flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#newschedulePurchase{
+    width:90%;
+    display :flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(128, 128, 128, 0.269);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.itineraryPurchase{
+    display :flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 5%;
+}
+
+
