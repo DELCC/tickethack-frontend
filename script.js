@@ -23,7 +23,7 @@ document.querySelector("#addCity").addEventListener('click', function(){
         //Affichage des schedules    
             for (const journey of data.trips){
                 console.log(journey["_id"])
-
+                document.querySelector(".card-right").style.overflow="scroll";
                 document.querySelector("#card").innerHTML+=`<div id="newJourney">
                         <div id="newJourneyDeparture">${journey["departure"]}</div>
                         <div>></div>
